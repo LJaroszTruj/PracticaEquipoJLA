@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace JLATeam
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 v2 = new Form2();
+            Form1 v1 = new Form1();
             this.Hide();
-            v2.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
+            v1.Show();
         }
     }
 }
