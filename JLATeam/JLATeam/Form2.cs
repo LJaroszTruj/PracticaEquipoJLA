@@ -8,13 +8,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using MySql.Data.MySqlClient;
+using MySql.Data.Types;
+
 namespace JLATeam
 {
     public partial class Form2 : Form
     {
+        //La línea que guarda la IP del servidor MySql, el usuario y la pass
+        String cadenaConexion;
+
+        //Conector que almacena la conexión a la BBDD
+        MySqlConnection conexion;
+
+        //Comando que quiero que se ejecute
+        MySqlCommand comando;
+
+        //Consulta
+        String sentenciaSQL;
+
+        //Resultado de la consulta
+        MySqlDataReader resultado;
+        
         public Form2()
         {
             InitializeComponent();
+            try
+            {
+                cadenaConexion = "Server = localhost; Database = liga; Uid = root; Pwd = ; Port = 3306;";
+                conexion = new MySqlConnection(cadenaConexion);
+                conexion.Open();
+
+            }
+            catch (Exception) { }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,5 +49,54 @@ namespace JLATeam
             this.Hide();
             v1.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {//Botón para ver todos los equipos
+            sentenciaSQL = "SELECT nombre, ciudad, web, puntos FROM equipos;";
+            comando = new MySqlCommand(sentenciaSQL, conexion);
+            resultado = comando.ExecuteReader();
+            conexion.Close();
+            conexion.Open();
+            comando = new MySqlCommand(sentenciaSQL, conexion);
+            comando.ExecuteNonQuery();
+            label1.Text = sentenciaSQL;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            sentenciaSQL = "SELECT nombre, puntos FROM equipos WHERE puntos = (SELECT MAX(puntos) FROM liga.equipos);";
+            comando = new MySqlCommand(sentenciaSQL, conexion);
+            resultado = comando.ExecuteReader();
+            conexion.Close();
+            conexion.Open();
+            comando = new MySqlCommand(sentenciaSQL, conexion);
+            comando.ExecuteNonQuery();
+            label1.Text = sentenciaSQL;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            sentenciaSQL = "SELECT nombre, puntos FROM equipos WHERE puntos = (SELECT MIN(puntos) FROM liga.equipos);";
+            comando = new MySqlCommand(sentenciaSQL, conexion);
+            resultado = comando.ExecuteReader();
+            conexion.Close();
+            conexion.Open();
+            comando = new MySqlCommand(sentenciaSQL, conexion);
+            comando.ExecuteNonQuery();
+            label1.Text = sentenciaSQL;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            sentenciaSQL = "SELECT nombre, web FROM equipos;";
+            comando = new MySqlCommand(sentenciaSQL, conexion);
+            resultado = comando.ExecuteReader();
+            conexion.Close();
+            conexion.Open();
+            comando = new MySqlCommand(sentenciaSQL, conexion);
+            comando.ExecuteNonQuery();
+            label1.Text = sentenciaSQL;
+        }
+
     }
 }
