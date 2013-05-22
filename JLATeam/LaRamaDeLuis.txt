@@ -1,0 +1,4 @@
+SELECT nombre, ciudad, web, puntos FROM equipos;
+SELECT nombre, puntos FROM equipos WHERE puntos = (SELECT MAX(puntos) FROM liga.equipos);
+SELECT nombre, puntos FROM equipos WHERE puntos = (SELECT MIN(puntos) FROM liga.equipos);
+SELECT nombre, web FROM equipos;
