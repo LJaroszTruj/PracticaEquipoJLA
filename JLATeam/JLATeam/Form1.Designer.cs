@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button3
@@ -97,11 +99,33 @@
             this.label3.Text = "DataBase Ebanca";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(226, 294);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(115, 38);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Conectar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(347, 304);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(124, 25);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "No conectado";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 289);
+            this.ClientSize = new System.Drawing.Size(694, 359);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -122,6 +146,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label4;
 
     }
 }

@@ -51,52 +51,19 @@ namespace JLATeam
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {//Botón para ver todos los equipos
-            sentenciaSQL = "SELECT nombre, ciudad, web, puntos FROM equipos;";
-            comando = new MySqlCommand(sentenciaSQL, conexion);
-            resultado = comando.ExecuteReader();
-            conexion.Close();
-            conexion.Open();
-            comando = new MySqlCommand(sentenciaSQL, conexion);
-            comando.ExecuteNonQuery();
-            label1.Text = sentenciaSQL;
+        {
+            button7.Show();
+            button5.Show();
+            button4.Hide();
+            button6.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            sentenciaSQL = "SELECT nombre, puntos FROM equipos WHERE puntos = (SELECT MAX(puntos) FROM liga.equipos);";
-            comando = new MySqlCommand(sentenciaSQL, conexion);
-            resultado = comando.ExecuteReader();
-            conexion.Close();
-            conexion.Open();
-            comando = new MySqlCommand(sentenciaSQL, conexion);
-            comando.ExecuteNonQuery();
-            label1.Text = sentenciaSQL;
+            button7.Hide();
+            button5.Hide();
+            button4.Show();
+            button6.Show();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            sentenciaSQL = "SELECT nombre, puntos FROM equipos WHERE puntos = (SELECT MIN(puntos) FROM liga.equipos);";
-            comando = new MySqlCommand(sentenciaSQL, conexion);
-            resultado = comando.ExecuteReader();
-            conexion.Close();
-            conexion.Open();
-            comando = new MySqlCommand(sentenciaSQL, conexion);
-            comando.ExecuteNonQuery();
-            label1.Text = sentenciaSQL;
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            sentenciaSQL = "SELECT nombre, web FROM equipos;";
-            comando = new MySqlCommand(sentenciaSQL, conexion);
-            resultado = comando.ExecuteReader();
-            conexion.Close();
-            conexion.Open();
-            comando = new MySqlCommand(sentenciaSQL, conexion);
-            comando.ExecuteNonQuery();
-            label1.Text = sentenciaSQL;
-        }
-
     }
 }
