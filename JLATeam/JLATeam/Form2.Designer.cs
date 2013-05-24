@@ -29,12 +29,25 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.accede_equipo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.accede_jugadores = new System.Windows.Forms.Button();
+            this.accede_partido = new System.Windows.Forms.Button();
+            this.consulta1E = new System.Windows.Forms.Button();
+            this.consulta2E = new System.Windows.Forms.Button();
+            this.consulta3E = new System.Windows.Forms.Button();
+            this.consulta4E = new System.Windows.Forms.Button();
+            this.consulta1J = new System.Windows.Forms.Button();
+            this.consulta2J = new System.Windows.Forms.Button();
+            this.consulta3J = new System.Windows.Forms.Button();
+            this.consulta4J = new System.Windows.Forms.Button();
+            this.consulta5J = new System.Windows.Forms.Button();
+            this.consulta6J = new System.Windows.Forms.Button();
+            this.consulta1P = new System.Windows.Forms.Button();
+            this.consulta2P = new System.Windows.Forms.Button();
+            this.consulta3P = new System.Windows.Forms.Button();
+            this.consulta4P = new System.Windows.Forms.Button();
+            this.consulta5P = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -47,61 +60,198 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // accede_equipo
             // 
-            this.button2.Location = new System.Drawing.Point(107, 529);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.accede_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accede_equipo.Location = new System.Drawing.Point(12, 542);
+            this.accede_equipo.Name = "accede_equipo";
+            this.accede_equipo.Size = new System.Drawing.Size(75, 34);
+            this.accede_equipo.TabIndex = 1;
+            this.accede_equipo.Text = "Equipos";
+            this.accede_equipo.UseVisualStyleBackColor = true;
+            this.accede_equipo.Click += new System.EventHandler(this.accede_equipo_Click);
             // 
-            // button3
+            // label1
             // 
-            this.button3.Location = new System.Drawing.Point(255, 528);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(313, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(520, 473);
+            this.label1.TabIndex = 7;
             // 
-            // button4
+            // accede_jugadores
             // 
-            this.button4.Location = new System.Drawing.Point(211, 102);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.accede_jugadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accede_jugadores.Location = new System.Drawing.Point(93, 542);
+            this.accede_jugadores.Name = "accede_jugadores";
+            this.accede_jugadores.Size = new System.Drawing.Size(91, 34);
+            this.accede_jugadores.TabIndex = 8;
+            this.accede_jugadores.Text = "Jugadores";
+            this.accede_jugadores.UseVisualStyleBackColor = true;
+            this.accede_jugadores.Click += new System.EventHandler(this.accede_jugadores_Click);
             // 
-            // button5
+            // accede_partido
             // 
-            this.button5.Location = new System.Drawing.Point(211, 102);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.accede_partido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accede_partido.Location = new System.Drawing.Point(190, 542);
+            this.accede_partido.Name = "accede_partido";
+            this.accede_partido.Size = new System.Drawing.Size(75, 34);
+            this.accede_partido.TabIndex = 9;
+            this.accede_partido.Text = "Partidos";
+            this.accede_partido.UseVisualStyleBackColor = true;
+            this.accede_partido.Click += new System.EventHandler(this.accede_partido_Click);
             // 
-            // button6
+            // consulta1E
             // 
-            this.button6.Location = new System.Drawing.Point(130, 102);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.consulta1E.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta1E.Location = new System.Drawing.Point(12, 12);
+            this.consulta1E.Name = "consulta1E";
+            this.consulta1E.Size = new System.Drawing.Size(113, 83);
+            this.consulta1E.TabIndex = 10;
+            this.consulta1E.Text = "Equipos que juegan";
+            this.consulta1E.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // consulta2E
             // 
-            this.button7.Location = new System.Drawing.Point(130, 101);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.consulta2E.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta2E.Location = new System.Drawing.Point(132, 12);
+            this.consulta2E.Name = "consulta2E";
+            this.consulta2E.Size = new System.Drawing.Size(113, 83);
+            this.consulta2E.TabIndex = 11;
+            this.consulta2E.Text = "Equipo con más puntos";
+            this.consulta2E.UseVisualStyleBackColor = true;
+            // 
+            // consulta3E
+            // 
+            this.consulta3E.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta3E.Location = new System.Drawing.Point(12, 101);
+            this.consulta3E.Name = "consulta3E";
+            this.consulta3E.Size = new System.Drawing.Size(113, 83);
+            this.consulta3E.TabIndex = 12;
+            this.consulta3E.Text = "Equipo con menos puntos";
+            this.consulta3E.UseVisualStyleBackColor = true;
+            // 
+            // consulta4E
+            // 
+            this.consulta4E.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta4E.Location = new System.Drawing.Point(132, 101);
+            this.consulta4E.Name = "consulta4E";
+            this.consulta4E.Size = new System.Drawing.Size(113, 83);
+            this.consulta4E.TabIndex = 13;
+            this.consulta4E.Text = "Webs de los equipos";
+            this.consulta4E.UseVisualStyleBackColor = true;
+            // 
+            // consulta1J
+            // 
+            this.consulta1J.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta1J.Location = new System.Drawing.Point(12, 12);
+            this.consulta1J.Name = "consulta1J";
+            this.consulta1J.Size = new System.Drawing.Size(113, 83);
+            this.consulta1J.TabIndex = 14;
+            this.consulta1J.Text = "Jugadores de la liga";
+            this.consulta1J.UseVisualStyleBackColor = true;
+            // 
+            // consulta2J
+            // 
+            this.consulta2J.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta2J.Location = new System.Drawing.Point(131, 12);
+            this.consulta2J.Name = "consulta2J";
+            this.consulta2J.Size = new System.Drawing.Size(113, 83);
+            this.consulta2J.TabIndex = 15;
+            this.consulta2J.Text = "Jugador con más salario";
+            this.consulta2J.UseVisualStyleBackColor = true;
+            // 
+            // consulta3J
+            // 
+            this.consulta3J.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta3J.Location = new System.Drawing.Point(12, 101);
+            this.consulta3J.Name = "consulta3J";
+            this.consulta3J.Size = new System.Drawing.Size(113, 83);
+            this.consulta3J.TabIndex = 16;
+            this.consulta3J.Text = "Jugador con menos salario";
+            this.consulta3J.UseVisualStyleBackColor = true;
+            // 
+            // consulta4J
+            // 
+            this.consulta4J.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta4J.Location = new System.Drawing.Point(131, 101);
+            this.consulta4J.Name = "consulta4J";
+            this.consulta4J.Size = new System.Drawing.Size(113, 83);
+            this.consulta4J.TabIndex = 17;
+            this.consulta4J.Text = "Jugador más alto";
+            this.consulta4J.UseVisualStyleBackColor = true;
+            // 
+            // consulta5J
+            // 
+            this.consulta5J.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta5J.Location = new System.Drawing.Point(13, 190);
+            this.consulta5J.Name = "consulta5J";
+            this.consulta5J.Size = new System.Drawing.Size(113, 83);
+            this.consulta5J.TabIndex = 18;
+            this.consulta5J.Text = "Jugador más bajo";
+            this.consulta5J.UseVisualStyleBackColor = true;
+            // 
+            // consulta6J
+            // 
+            this.consulta6J.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta6J.Location = new System.Drawing.Point(132, 190);
+            this.consulta6J.Name = "consulta6J";
+            this.consulta6J.Size = new System.Drawing.Size(113, 83);
+            this.consulta6J.TabIndex = 19;
+            this.consulta6J.Text = "Nº de jugadores que juegan en cada equipo";
+            this.consulta6J.UseVisualStyleBackColor = true;
+            // 
+            // consulta1P
+            // 
+            this.consulta1P.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta1P.Location = new System.Drawing.Point(12, 12);
+            this.consulta1P.Name = "consulta1P";
+            this.consulta1P.Size = new System.Drawing.Size(113, 83);
+            this.consulta1P.TabIndex = 20;
+            this.consulta1P.Text = "Partidos jugados";
+            this.consulta1P.UseVisualStyleBackColor = true;
+            // 
+            // consulta2P
+            // 
+            this.consulta2P.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta2P.Location = new System.Drawing.Point(131, 12);
+            this.consulta2P.Name = "consulta2P";
+            this.consulta2P.Size = new System.Drawing.Size(113, 83);
+            this.consulta2P.TabIndex = 21;
+            this.consulta2P.Text = "Mayor resultado en local";
+            this.consulta2P.UseVisualStyleBackColor = true;
+            // 
+            // consulta3P
+            // 
+            this.consulta3P.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta3P.Location = new System.Drawing.Point(12, 101);
+            this.consulta3P.Name = "consulta3P";
+            this.consulta3P.Size = new System.Drawing.Size(113, 83);
+            this.consulta3P.TabIndex = 22;
+            this.consulta3P.Text = "Mayor resultado en visitante";
+            this.consulta3P.UseVisualStyleBackColor = true;
+            // 
+            // consulta4P
+            // 
+            this.consulta4P.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta4P.Location = new System.Drawing.Point(131, 101);
+            this.consulta4P.Name = "consulta4P";
+            this.consulta4P.Size = new System.Drawing.Size(113, 83);
+            this.consulta4P.TabIndex = 23;
+            this.consulta4P.Text = "Menor resultado en local";
+            this.consulta4P.UseVisualStyleBackColor = true;
+            // 
+            // consulta5P
+            // 
+            this.consulta5P.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consulta5P.Location = new System.Drawing.Point(12, 190);
+            this.consulta5P.Name = "consulta5P";
+            this.consulta5P.Size = new System.Drawing.Size(113, 83);
+            this.consulta5P.TabIndex = 24;
+            this.consulta5P.Text = "Mayor resultado en local";
+            this.consulta5P.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -109,13 +259,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::JLATeam.Properties.Resources.baseDeLiga;
             this.ClientSize = new System.Drawing.Size(845, 611);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.consulta1J);
+            this.Controls.Add(this.consulta2J);
+            this.Controls.Add(this.consulta3J);
+            this.Controls.Add(this.consulta4J);
+            this.Controls.Add(this.consulta5J);
+            this.Controls.Add(this.consulta6J);
+            this.Controls.Add(this.consulta5P);
+            this.Controls.Add(this.consulta4P);
+            this.Controls.Add(this.consulta3P);
+            this.Controls.Add(this.consulta2P);
+            this.Controls.Add(this.consulta1P);
+            this.Controls.Add(this.consulta2E);
+            this.Controls.Add(this.consulta1E);
+            this.Controls.Add(this.consulta4E);
+            this.Controls.Add(this.consulta3E);
+            this.Controls.Add(this.accede_partido);
+            this.Controls.Add(this.accede_jugadores);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.accede_equipo);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button7);
             this.Name = "Form2";
             this.Text = "DataBase Liga";
             this.ResumeLayout(false);
@@ -125,11 +288,24 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button accede_equipo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button accede_jugadores;
+        private System.Windows.Forms.Button accede_partido;
+        private System.Windows.Forms.Button consulta1E;
+        private System.Windows.Forms.Button consulta2E;
+        private System.Windows.Forms.Button consulta3E;
+        private System.Windows.Forms.Button consulta4E;
+        private System.Windows.Forms.Button consulta1J;
+        private System.Windows.Forms.Button consulta2J;
+        private System.Windows.Forms.Button consulta3J;
+        private System.Windows.Forms.Button consulta4J;
+        private System.Windows.Forms.Button consulta5J;
+        private System.Windows.Forms.Button consulta6J;
+        private System.Windows.Forms.Button consulta1P;
+        private System.Windows.Forms.Button consulta2P;
+        private System.Windows.Forms.Button consulta3P;
+        private System.Windows.Forms.Button consulta4P;
+        private System.Windows.Forms.Button consulta5P;
     }
 }

@@ -8,10 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using MySql.Data.MySqlClient;
+using MySql.Data.Types;
+
 namespace JLATeam
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
