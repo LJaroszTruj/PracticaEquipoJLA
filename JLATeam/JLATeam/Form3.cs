@@ -53,6 +53,7 @@ namespace JLATeam
 
         private void button2_Click(object sender, EventArgs e)
         {//Botón para ver todos los equipos
+            //sentenciaSQL = "SELECT * FROM autores WHERE id_autor = 1;";
             sentenciaSQL = "SELECT * FROM autores;";
             //sentenciaSQL = "SELECT id_autor, login, password, correo, url FROM autores;";
             comando = new MySqlCommand(sentenciaSQL, conexion);
@@ -64,7 +65,9 @@ namespace JLATeam
             // Si metemos un if nos sale el ultimo de la lista?.
             while (resultado.Read())
             {
-                label2.Text += resultado.GetString("id_autor") + " " + resultado.GetString("login") + " " + resultado.GetString("Password");
+                
+                label2.Text += resultado.GetString("id_autor") + " " + resultado.GetString("login") + " " + resultado.GetString("Password") +"\n";
+                                
                 //comboBox1.Items.Add(resultado.GetString("id_autor"));
                 
                 //DataTable tabla = new DataTable();
